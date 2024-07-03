@@ -26,6 +26,10 @@ public class Product {
 		this.price = price;
 	}
 	
+	public void noStaticPriceUpdate() {
+		price *= 1.1;
+	}
+	
 	public static void staticPriceUpdate(Product p) {
 		p.setPrice(p.getPrice() * 1.1);
 	}
